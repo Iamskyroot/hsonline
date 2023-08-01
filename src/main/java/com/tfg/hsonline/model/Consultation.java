@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-
+import jakarta.annotation.Nullable;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -28,19 +28,18 @@ public class Consultation {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @NotNull
     private Long patientId;
     @NotNull
     private String reason;
-    @Null
+    @Nullable
     private Double height;
-    @Null
+    @Nullable
     private Double weight;
     @NotNull
     private Double temperature;
-    @Null
+    @Nullable
     private Double bloodPressure;
-    @Null
+    @Nullable
     private Double heartRate;
     private String simptom;
     private String status;
