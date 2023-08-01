@@ -3,7 +3,8 @@
     Created on : 13-dic-2022, 23:36:06
     Author     : Skyroot
 --%>
-
+<%@page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
     <head>
